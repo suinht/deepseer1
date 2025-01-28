@@ -3,7 +3,7 @@ from openai import OpenAI
 
 # Initialize with DeepSeek's endpoint and your key
 client = OpenAI(
-    api_key="sk-c14b13afaffb41469de403d009953e16",  # Replace with your actual key
+    api_key="sk-c",  # Replace with your actual key
     base_url="https://api.deepseek.com/v1"  # Critical: Use /v1 endpoint
 )
 
@@ -11,7 +11,7 @@ client = OpenAI(
 st.set_page_config(page_title="Building your DeepSeek R1 personal investment porfolio", page_icon="🤖")
 # Add DeepSeek logo
 try:
-    st.image("/Users/trangpham/Code/deepseek/deepseek-logo.jpg", width=200)  # Ensure the logo is in the same directory as your script
+    st.image("deepseek/deepseek-logo.jpg", width=200)  # Ensure the logo is in the same directory as your script
 except FileNotFoundError:
     st.error("Logo file not found. Please ensure 'deepseek_logo.png' is in the correct directory.")
 # App title
